@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+</head>
+<body>
+  <!-- Q:  What is a variable? 
+     Ans:  Variable is a container, in variable we can save a value and then use it later in our code.
+  -->
+
+  <script>
+    // How variables work
+    let variable1 = 3;
+    console.log(variable1);
+
+    let calculation = 2 + 2;
+    console.log(calculation);
+    console.log(calculation + 2);
+    
+    let result = calculation + 2;
+    console.log(result);
+    
+    let message = 'hello';
+    console.log(message);
+
+    variable1 = 5; // Don't use "let" when re-assigning
+    console.log(variable1);
+
+    // Syntax rule for variables
+    // 1. can't use special word Ex. let let = 1; (let is a reserve keyword)
+    // 2. can't start with a number Ex. let 1name = 1; right way let name1 = 1; or let nameOne = 1;
+    // 3. can't use special characters expect $ and _ Ex. let name@#$%^&* = 1; right way let name = $UserName; or let name = _username;
+    // 4. can't use space Ex. let first name = John; right way let firstName = John;
+    // ; means end of statement or instruction.
+  </script>
+</body>
+</html>

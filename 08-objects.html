@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    /*
+    // this '{}' is object
+    const product = {
+      name: 'Apple',
+      price: 50
+    }
+
+    console.log(product);
+    console.log(product.name);
+
+    // we can change the value of the property for Ex.
+    product.name = 'Orange';
+    console.log(product);
+
+    // add new value 
+    product.newproperty = true;
+    console.log(product);
+
+    // remove an value from object
+    delete product.newproperty;
+    console.log(product);
+    */
+
+    const product2 = {
+      name: 'Shirt',
+      'delivery-time' : '1 day', // use like this also ['delivery-time'] : '1 day'
+      rating: { // this is called nested object
+        star: 4.5,
+        count: 87
+      },
+      fun: function function1() {
+        console.log('Function inside object');
+      }
+
+    }
+
+    console.log(product2);
+    console.log(product2.name); // use dot notation by default
+    console.log(product2['name']);  // it's called bracket notation
+
+    // let us use properties that don't work with dot notation example is below
+    console.log(product2['delivery-time']);  
+
+    console.log(product2.rating.count);
+    product2.fun();
+
+    // JSON.stringify convert javaScript to JSON and it's not support function inside object.
+    console.log(JSON.stringify(product2));
+    
+    // JSON.perse convert JSON data to javaScript object.
+    const jsonString = JSON.stringify(product2);
+    console.log(JSON.parse(jsonString));
+
+    // localStorage : Save value more parmanently and it's only support string
+
+  </script>
+</body>
+</html>
